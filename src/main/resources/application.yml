@@ -5,7 +5,7 @@ spring:
     name: tensquare-qa
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://116.62.4.29:3306/tensquare_qa?characterEncoding=utf-8
+    url: jdbc:mysql://192.168.8.128:3306/tensquare_qa?characterEncoding=utf-8
     password: lzt4922
     username: root
 
