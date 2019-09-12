@@ -8,8 +8,18 @@ spring:
     url: jdbc:mysql://192.168.8.128:3306/tensquare_qa?characterEncoding=utf-8
     password: lzt4922
     username: root
+  jwt:
+    config:
+      key: lzt4922
+      ttl: 1800
 
 mybatis:
   mapper-locations: classpath:/mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6060/eureka/
+  instance:
+    prefer-ip-address: true

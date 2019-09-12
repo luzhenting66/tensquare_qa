@@ -59,5 +59,13 @@
             <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
             <version>1.2.5</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>I
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>I
     </dependencies>
 </project>

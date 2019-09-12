@@ -1,16 +1,16 @@
 package cn.pipilu.tensquare.qa.entity;
 
+import cn.pipilu.plus.common.base.entity.BaseEntity;
 import lombok.Data;
 import lombok.ToString;
 
 import javax.persistence.Table;
-import java.io.Serializable;
 import java.util.Date;
 
 @Data
 @ToString
 @Table(name = "tb_problem")
-public class ProblemEntity implements Serializable {
+public class ProblemEntity extends BaseEntity {
 
     private static final long serialVersionUID = 2742801575688513627L;
      private String title;//'标题',
