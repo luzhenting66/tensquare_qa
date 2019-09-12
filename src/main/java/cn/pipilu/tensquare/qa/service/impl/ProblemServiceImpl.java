@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 @Service
 public class ProblemServiceImpl implements ProblemService {
@@ -60,6 +61,8 @@ public class ProblemServiceImpl implements ProblemService {
 
     @Override
     public Response<QueryLabelResp> queryProblemsByLabelId(String labelId) {
-        return baseClient.findById(labelId);
+        Response<QueryLabelResp> response = baseClient.findById(labelId);
+
+        return Objects.isNull(response)?new Response<>():response;
     }
 }
